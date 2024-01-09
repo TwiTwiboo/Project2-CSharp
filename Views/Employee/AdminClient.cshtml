@@ -6,35 +6,7 @@
 }
 
 
-@*<h3 class="titre">List of Clients</h3>
-<table border="1">
-    <tr>
-        <th>client</th>
-        <th>lien</th>
-    </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.Titre</td>
-            <td>@Html.ActionLink(item.Lien, "afficher tuto", new { id = item.Id })</td>
-        </tr>
-    }
-</table>
-
-
-@section Menu{
-    <ul>
-        <li>@Html.ActionLink("Accueil", "Index")</li>
-        <li class="selectionne">@Html.ActionLink("Liste des tutoriels", "Liste")</li>
-        <li>@Html.ActionLink("Forum", "Forum")</li>
-    </ul>
-}
-
-@section ExtraCss{
-    <link href="~/css/Liste.css" rel="stylesheet" />
-}
-*@
 
 
 <h3 class="titre">Accueil du site de tutoriels</h3>
